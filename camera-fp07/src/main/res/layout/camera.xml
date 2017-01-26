@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frameParent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout">
+
+        <SurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/surfaceView"
+            android:layout_gravity="center"
+            android:background="@null"/>
+
+        <com.praescient.components.camera_fp07.utils.FocusBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/marginbottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/focus"
+            android:adjustViewBounds="true"
+            android:maxWidth="@dimen/otherbutton"
+            android:scaleType="fitCenter"
+            android:src="@drawable/focus"
+            android:background="@null"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/marginbottom"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/close"
+            android:adjustViewBounds="true"
+            android:maxWidth="@dimen/otherbutton"
+            android:scaleType="fitCenter"
+            android:src="@drawable/delete"
+            android:background="@null"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_right_margin"
+            android:layout_marginRight="@dimen/left_right_margin"
+            android:adjustViewBounds="true"
+            android:maxWidth="@dimen/shutterbutton"
+            android:scaleType="fitCenter"
+            android:id="@+id/shutter"
+            android:src="@drawable/shutter"
+            android:background="@null"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/flash"
+            android:adjustViewBounds="true"
+            android:maxWidth="@dimen/otherbutton"
+            android:scaleType="fitCenter"
+            android:src="@drawable/flash_off"
+            android:background="@null" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
